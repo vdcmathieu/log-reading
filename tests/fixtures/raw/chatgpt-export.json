@@ -1,0 +1,31 @@
+[
+  {
+    "title": "Greeting",
+    "create_time": 1700000000.0,
+    "conversation_id": "conv-1",
+    "mapping": {
+      "root": { "id": "root", "message": null, "parent": null, "children": ["n1"] },
+      "n1": {
+        "id": "n1",
+        "message": {
+          "author": { "role": "user" },
+          "create_time": 1700000001.0,
+          "content": { "content_type": "text", "parts": ["Hi ChatGPT"] }
+        },
+        "parent": "root",
+        "children": ["n2"]
+      },
+      "n2": {
+        "id": "n2",
+        "message": {
+          "author": { "role": "assistant" },
+          "create_time": 1700000002.25,
+          "content": { "content_type": "text", "parts": ["Hello! How can I help?"] },
+          "metadata": { "model_slug": "gpt-4o" }
+        },
+        "parent": "n1",
+        "children": []
+      }
+    }
+  }
+]

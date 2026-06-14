@@ -1,0 +1,68 @@
+{
+  "participant": "claude-v3",
+  "generated_at": "2026-06-14T19:11:19Z",
+  "source": {
+    "path": "raw/claude-v3.jsonl",
+    "kind": "file",
+    "files": [
+      "claude-v3.jsonl"
+    ]
+  },
+  "formats_detected": {
+    "claude-v3.jsonl": "claude-code-v3"
+  },
+  "detection_scores": {
+    "claude-v3.jsonl": {
+      "claude-code-classic": 0.0,
+      "claude-code-v3": 0.952,
+      "codex-cli": 0.0,
+      "chatgpt-export": 0.0,
+      "generic": 0.1
+    }
+  },
+  "providers": [
+    "anthropic"
+  ],
+  "models": [
+    "claude-opus-4-8"
+  ],
+  "stats": {
+    "sessions": 1,
+    "messages": 2,
+    "user_messages": 1,
+    "assistant_messages": 1,
+    "files_processed": 1,
+    "parse_errors": 0
+  },
+  "parse_errors": [],
+  "sessions": [
+    {
+      "session_id": "v3-sess",
+      "source_file": "claude-v3.jsonl",
+      "source_format": "claude-code-v3",
+      "provider": "anthropic",
+      "models": [
+        "claude-opus-4-8"
+      ],
+      "cwd": "/work",
+      "cli_version": "v3",
+      "started_at": "2025-01-01T11:40:00.000Z",
+      "ended_at": "2025-01-01T11:40:05.000Z",
+      "message_count": 2,
+      "messages": [
+        {
+          "role": "user",
+          "text": "V3 hello",
+          "timestamp": "2025-01-01T11:40:02.000Z"
+        },
+        {
+          "role": "assistant",
+          "text": "V3 answer part 1\n\nV3 answer part 2",
+          "timestamp": "2025-01-01T11:40:03.000Z",
+          "model": "claude-opus-4-8",
+          "provider": "anthropic"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "participant": "claude-classic",
+  "generated_at": "2026-06-14T19:11:19Z",
+  "source": {
+    "path": "raw/claude-classic.jsonl",
+    "kind": "file",
+    "files": [
+      "claude-classic.jsonl"
+    ]
+  },
+  "formats_detected": {
+    "claude-classic.jsonl": "claude-code-classic"
+  },
+  "detection_scores": {
+    "claude-classic.jsonl": {
+      "claude-code-classic": 0.277,
+      "claude-code-v3": 0.0,
+      "codex-cli": 0.0,
+      "chatgpt-export": 0.0,
+      "generic": 0.1
+    }
+  },
+  "providers": [
+    "anthropic"
+  ],
+  "models": [
+    "claude-opus-4-8",
+    "claude-sonnet-4-6"
+  ],
+  "stats": {
+    "sessions": 2,
+    "messages": 7,
+    "user_messages": 4,
+    "assistant_messages": 3,
+    "files_processed": 1,
+    "parse_errors": 0
+  },
+  "parse_errors": [],
+  "sessions": [
+    {
+      "session_id": "s1",
+      "source_file": "claude-classic.jsonl",
+      "source_format": "claude-code-classic",
+      "provider": "anthropic",
+      "models": [
+        "claude-opus-4-8"
+      ],
+      "cwd": "/home/u/proj",
+      "project": "/home/u/proj",
+      "git_branch": "main",
+      "cli_version": "2.1.0",
+      "started_at": "2026-01-01T10:00:00.000Z",
+      "ended_at": "2026-01-01T10:03:07.000Z",
+      "message_count": 5,
+      "messages": [
+        {
+          "role": "user",
+          "text": "Hello, can you help me?",
+          "timestamp": "2026-01-01T10:00:00.000Z"
+        },
+        {
+          "role": "assistant",
+          "text": "Sure!\n\nHere is more.",
+          "timestamp": "2026-01-01T10:00:05.000Z",
+          "model": "claude-opus-4-8",
+          "provider": "anthropic"
+        },
+        {
+          "role": "user",
+          "text": "/model opus",
+          "timestamp": "2026-01-01T10:02:00.000Z"
+        },
+        {
+          "role": "user",
+          "text": "Real question here.",
+          "timestamp": "2026-01-01T10:03:00.000Z"
+        },
+        {
+          "role": "assistant",
+          "text": "Answer to real question.",
+          "timestamp": "2026-01-01T10:03:07.000Z",
+          "model": "claude-opus-4-8",
+          "provider": "anthropic"
+        }
+      ]
+    },
+    {
+      "session_id": "s2",
+      "source_file": "claude-classic.jsonl",
+      "source_format": "claude-code-classic",
+      "provider": "anthropic",
+      "models": [
+        "claude-sonnet-4-6"
+      ],
+      "cwd": "/home/u/proj2",
+      "project": "/home/u/proj2",
+      "started_at": "2026-01-01T11:00:00.000Z",
+      "ended_at": "2026-01-01T11:00:05.000Z",
+      "message_count": 2,
+      "messages": [
+        {
+          "role": "user",
+          "text": "Second session prompt",
+          "timestamp": "2026-01-01T11:00:00.000Z"
+        },
+        {
+          "role": "assistant",
+          "text": "Second session answer",
+          "timestamp": "2026-01-01T11:00:05.000Z",
+          "model": "claude-sonnet-4-6",
+          "provider": "anthropic"
+        }
+      ]
+    }
+  ]
+}

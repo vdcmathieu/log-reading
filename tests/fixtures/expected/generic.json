@@ -1,0 +1,73 @@
+{
+  "participant": "generic",
+  "generated_at": "2026-06-14T19:11:19Z",
+  "source": {
+    "path": "raw/generic.jsonl",
+    "kind": "file",
+    "files": [
+      "generic.jsonl"
+    ]
+  },
+  "formats_detected": {
+    "generic.jsonl": "generic"
+  },
+  "detection_scores": {
+    "generic.jsonl": {
+      "claude-code-classic": 0.0,
+      "claude-code-v3": 0.0,
+      "codex-cli": 0.0,
+      "chatgpt-export": 0.0,
+      "generic": 0.1
+    }
+  },
+  "providers": [],
+  "models": [
+    "mystery-model-x"
+  ],
+  "stats": {
+    "sessions": 1,
+    "messages": 4,
+    "user_messages": 2,
+    "assistant_messages": 2,
+    "files_processed": 1,
+    "parse_errors": 0
+  },
+  "parse_errors": [],
+  "sessions": [
+    {
+      "session_id": "generic",
+      "source_file": "generic.jsonl",
+      "source_format": "generic",
+      "models": [
+        "mystery-model-x"
+      ],
+      "started_at": "2026-02-02T09:00:00.000Z",
+      "ended_at": "2026-02-02T09:01:01.000Z",
+      "message_count": 4,
+      "messages": [
+        {
+          "role": "user",
+          "text": "generic hi",
+          "timestamp": "2026-02-02T09:00:00.000Z"
+        },
+        {
+          "role": "assistant",
+          "text": "generic hello",
+          "timestamp": "2026-02-02T09:00:01.000Z",
+          "model": "mystery-model-x"
+        },
+        {
+          "role": "user",
+          "text": "another generic prompt",
+          "timestamp": "2026-02-02T09:01:00.000Z"
+        },
+        {
+          "role": "assistant",
+          "text": "another generic reply",
+          "timestamp": "2026-02-02T09:01:01.000Z",
+          "model": "mystery-model-x"
+        }
+      ]
+    }
+  ]
+}

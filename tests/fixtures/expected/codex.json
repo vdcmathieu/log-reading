@@ -1,0 +1,68 @@
+{
+  "participant": "codex",
+  "generated_at": "2026-06-14T19:11:19Z",
+  "source": {
+    "path": "raw/codex.jsonl",
+    "kind": "file",
+    "files": [
+      "codex.jsonl"
+    ]
+  },
+  "formats_detected": {
+    "codex.jsonl": "codex-cli"
+  },
+  "detection_scores": {
+    "codex.jsonl": {
+      "claude-code-classic": 0.0,
+      "claude-code-v3": 0.0,
+      "codex-cli": 1.0,
+      "chatgpt-export": 0.0,
+      "generic": 0.1
+    }
+  },
+  "providers": [
+    "openai"
+  ],
+  "models": [
+    "gpt-5-codex"
+  ],
+  "stats": {
+    "sessions": 1,
+    "messages": 2,
+    "user_messages": 1,
+    "assistant_messages": 1,
+    "files_processed": 1,
+    "parse_errors": 0
+  },
+  "parse_errors": [],
+  "sessions": [
+    {
+      "session_id": "codex-1",
+      "source_file": "codex.jsonl",
+      "source_format": "codex-cli",
+      "provider": "openai",
+      "models": [
+        "gpt-5-codex"
+      ],
+      "cwd": "/c/proj",
+      "cli_version": "0.5.0",
+      "started_at": "2026-03-03T08:00:00.000Z",
+      "ended_at": "2026-03-03T08:00:03.000Z",
+      "message_count": 2,
+      "messages": [
+        {
+          "role": "user",
+          "text": "codex question",
+          "timestamp": "2026-03-03T08:00:02.000Z"
+        },
+        {
+          "role": "assistant",
+          "text": "codex answer",
+          "timestamp": "2026-03-03T08:00:03.000Z",
+          "model": "gpt-5-codex",
+          "provider": "openai"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+# Dependencies / build output
+node_modules/
+dist/
+dist-ssr/
+*.local
+.cache/
+*.tsbuildinfo
+
+# OS / editor noise
+.DS_Store
+**/.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# ----------------------------------------------------------------------------
+# Data safety — NEVER commit logs or their cleaned exports. They can contain
+# real prompts, names, file paths and secrets. This app processes everything in
+# the browser; no log or cleaned-output file belongs in this repository.
+#
+# Strategy: ignore every file type the app reads (logs) or writes (cleaned
+# exports) anywhere in the tree, then re-include only the project's own files.
+# ----------------------------------------------------------------------------
+raw-logs/
+clean-logs/
+/data/
+/private/
+/fixtures-real/
+
+*.jsonl
+*.ndjson
+*.log
+*.json
+*.md
+
+# Re-include the repository's own JSON/Markdown (never log data).
+!package.json
+!package-lock.json
+!tsconfig*.json
+!README.md
+!.vscode/extensions.json
+
+# Re-include the committed synthetic test fixtures (contain no real data).
+!tests/**/*.json
+!tests/**/*.jsonl
+!tests/**/*.md

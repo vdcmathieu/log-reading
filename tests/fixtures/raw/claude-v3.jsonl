@@ -1,0 +1,7 @@
+{"type":"session","id":"v3-sess","cwd":"/work","version":3,"timestamp":1735731600000}
+{"type":"model_change","modelId":"claude-opus-4-8","provider":"anthropic","timestamp":1735731601000}
+{"type":"message","timestamp":1735731602000,"message":{"role":"user","content":[{"type":"text","text":"V3 hello"}]}}
+{"type":"message","timestamp":1735731603000,"message":{"role":"assistant","content":[{"type":"thinking","text":"think"},{"type":"text","text":"V3 answer part 1"},{"type":"toolCall","name":"x","input":{}}]}}
+{"type":"message","timestamp":1735731604000,"message":{"role":"toolResult","content":[{"type":"text","text":"tool output"}]}}
+{"type":"message","timestamp":1735731605000,"message":{"role":"assistant","content":[{"type":"text","text":"V3 answer part 2"}]}}
+{"type":"thinking_level_change","timestamp":1735731606000,"level":"high"}

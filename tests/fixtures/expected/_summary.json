@@ -1,0 +1,104 @@
+{
+  "generated_at": "2026-06-14T19:11:19Z",
+  "participants": [
+    {
+      "participant": "chatgpt-export",
+      "formats": [
+        "chatgpt-export"
+      ],
+      "stats": {
+        "sessions": 1,
+        "messages": 2,
+        "user_messages": 1,
+        "assistant_messages": 1,
+        "files_processed": 1,
+        "parse_errors": 0
+      },
+      "models": [
+        "gpt-4o"
+      ],
+      "providers": [
+        "openai"
+      ]
+    },
+    {
+      "participant": "claude-classic",
+      "formats": [
+        "claude-code-classic"
+      ],
+      "stats": {
+        "sessions": 2,
+        "messages": 7,
+        "user_messages": 4,
+        "assistant_messages": 3,
+        "files_processed": 1,
+        "parse_errors": 0
+      },
+      "models": [
+        "claude-opus-4-8",
+        "claude-sonnet-4-6"
+      ],
+      "providers": [
+        "anthropic"
+      ]
+    },
+    {
+      "participant": "claude-v3",
+      "formats": [
+        "claude-code-v3"
+      ],
+      "stats": {
+        "sessions": 1,
+        "messages": 2,
+        "user_messages": 1,
+        "assistant_messages": 1,
+        "files_processed": 1,
+        "parse_errors": 0
+      },
+      "models": [
+        "claude-opus-4-8"
+      ],
+      "providers": [
+        "anthropic"
+      ]
+    },
+    {
+      "participant": "codex",
+      "formats": [
+        "codex-cli"
+      ],
+      "stats": {
+        "sessions": 1,
+        "messages": 2,
+        "user_messages": 1,
+        "assistant_messages": 1,
+        "files_processed": 1,
+        "parse_errors": 0
+      },
+      "models": [
+        "gpt-5-codex"
+      ],
+      "providers": [
+        "openai"
+      ]
+    },
+    {
+      "participant": "generic",
+      "formats": [
+        "generic"
+      ],
+      "stats": {
+        "sessions": 1,
+        "messages": 4,
+        "user_messages": 2,
+        "assistant_messages": 2,
+        "files_processed": 1,
+        "parse_errors": 0
+      },
+      "models": [
+        "mystery-model-x"
+      ],
+      "providers": []
+    }
+  ]
+}

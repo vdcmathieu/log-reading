@@ -1,0 +1,4 @@
+{"role":"user","content":"generic hi","timestamp":"2026-02-02T09:00:00.000Z"}
+{"role":"assistant","content":"generic hello","model":"mystery-model-x","timestamp":"2026-02-02T09:00:01.000Z"}
+{"role":"user","content":"another generic prompt","timestamp":"2026-02-02T09:01:00.000Z"}
+{"role":"assistant","content":"another generic reply","model":"mystery-model-x","timestamp":"2026-02-02T09:01:01.000Z"}

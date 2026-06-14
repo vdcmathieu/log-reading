@@ -1,0 +1,6 @@
+{"timestamp":"2026-03-03T08:00:00.000Z","type":"session_meta","payload":{"id":"codex-1","cwd":"/c/proj","model_provider":"openai","cli_version":"0.5.0"}}
+{"timestamp":"2026-03-03T08:00:01.000Z","type":"turn_context","payload":{"model":"gpt-5-codex","cwd":"/c/proj"}}
+{"timestamp":"2026-03-03T08:00:02.000Z","type":"event_msg","payload":{"type":"user_message","message":"codex question"}}
+{"timestamp":"2026-03-03T08:00:03.000Z","type":"event_msg","payload":{"type":"agent_message","message":"codex answer"}}
+{"timestamp":"2026-03-03T08:00:04.000Z","type":"event_msg","payload":{"type":"user_message","message":"<environment_context>cwd=/c/proj</environment_context>"}}
+{"timestamp":"2026-03-03T08:00:05.000Z","type":"response_item","payload":{"type":"message","role":"assistant","content":[{"type":"output_text","text":"fallback should be ignored"}]}}
