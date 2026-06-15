@@ -16,6 +16,17 @@ export default function App() {
   const [dragging, setDragging] = useState(false);
   const dragDepth = useRef(0);
   const addInputRef = useRef<HTMLInputElement>(null);
+  const addDirInputRef = useRef<HTMLInputElement>(null);
+
+  // `webkitdirectory` isn't in the React types; set it imperatively so the
+  // "Add folder" button opens a directory picker.
+  useEffect(() => {
+    const el = addDirInputRef.current;
+    if (el) {
+      el.setAttribute("webkitdirectory", "");
+      el.setAttribute("directory", "");
+    }
+  }, []);
 
   // Auto-select the first participant once results arrive.
   useEffect(() => {
@@ -106,7 +117,13 @@ export default function App() {
                 onClick={() => addInputRef.current?.click()}
                 className="rounded-lg border border-[var(--color-line)] px-3 py-1.5 text-sm font-medium transition-colors hover:bg-[var(--color-canvas)]"
               >
-                + Add logs
+                + Add files
+              </button>
+              <button
+                onClick={() => addDirInputRef.current?.click()}
+                className="rounded-lg border border-[var(--color-line)] px-3 py-1.5 text-sm font-medium transition-colors hover:bg-[var(--color-canvas)]"
+              >
+                + Add folder
               </button>
               <button
                 onClick={handleReset}
@@ -121,6 +138,16 @@ export default function App() {
             type="file"
             multiple
             accept=".jsonl,.ndjson,.json,.log"
+            className="hidden"
+            onChange={(e) => {
+              if (e.target.files) handleFileList(e.target.files);
+              e.target.value = "";
+            }}
+          />
+          <input
+            ref={addDirInputRef}
+            type="file"
+            multiple
             className="hidden"
             onChange={(e) => {
               if (e.target.files) handleFileList(e.target.files);
